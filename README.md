@@ -16,7 +16,7 @@ A simple and responsive Rock-Paper-Scissors game built with HTML, CSS, and JavaS
 
 ## Preview
 
-![alt text](image-1.png)
+![Rock paper scissors preview](./public/image.png)
 
 ## Getting Started
 
