@@ -10,12 +10,13 @@
 }
 
 :root {
-  --bg: #9ec91e;
-  --secondary-bg: #f2c244;
-  --text: #000000;
+  --bg: #180f1f;
+  --secondary-bg: #6928ff;
+  --text: #ffffff;
 }
 
 body {
+  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
