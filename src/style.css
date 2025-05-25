@@ -1,21 +1,18 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Bungee", sans-serif;
+  font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
-  /* font-size: 62.5%; */
 }
 
 :root {
-  --bg: #242222;
-  --accent1: #00ffc3;
-  --accent2: #ff3cac;
-  --text: #ffffff;
+  --bg: #9ec91e;
+  --secondary-bg: #f2c244;
+  --text: #000000;
 }
 
 body {
@@ -27,41 +24,35 @@ body {
 
 .game-arena {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   flex-direction: column;
   background-color: var(--bg);
-  color: var(--accent1);
+  color: var(--text);
   min-height: 100vh;
-  width: 70%;
+  width: 50vw;
+  
 }
 
-.title, .instructions {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.game-title {
-  text-align: center;
+.scores {
+  font-size: 12px;
 }
 
 .game-controls {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 20px
+  margin: 20px;
+  color: var(--accent1)
 }
 
-.start, .play-again, .reset {
+.reset {
   margin: 5px 15px;
 }
 
-.start:hover, .play-again:hover, .reset:hover {
+.reset:hover {
   cursor: pointer;
 }
 
 .game-details {
-  /* border: 2px dotted var(--accent2); */
   padding: 5px 10px;
   margin: 0 10px;
   display: flex;
@@ -70,20 +61,28 @@ body {
 }
 
 .computer-display, .player-display {
-  border: 4px dotted var(--accent2);
-  height: 300px;
-  width: 300px;
+  border: 3px dashed var(--text);
+  height: 150px;
+  width: 150px;
   margin: auto;
 }
 
 .game-results {
   text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: var(--secondary-bg);
+}
+
+.computer-text, .player-text {
+  text-align: center;
+  padding: 10px 12px;
 }
 
 .computer-display, .player-display {
   margin-bottom: 10px;
   margin-top: 10px;
-  font-size: 10rem;
+  font-size: 5rem;
   text-align: center;
 }
 
@@ -93,11 +92,11 @@ body {
 }
 
 .rock, .paper, .scissors {
-  background-color: antiquewhite;
-  margin: 10px;
-  width: 250px;
-  height: 150px;
-  font-size: 6rem;
+  background-color: #f0f0f0;
+  margin-right: 15px;
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
   border-radius: 12px;
   text-align: center;
 }
@@ -108,9 +107,7 @@ body {
   cursor: pointer;
 }
 
-.footer {
-  background-color: #141f1c;
-  color: var(--accent1);
-  width: 70%;
-  padding: 2rem;
+.option-text {
+  font-size: x-small;
+  margin-top: 10px;
 }

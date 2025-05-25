@@ -10,59 +10,45 @@
   </head>
   <body>
     <section class="game-arena">
-      <div class="title">
-        <h2 class="game-title">Rock Paper Scissors</h2>
-      </div>
-      <!-- <div class="instructions">
-        <p>Choose your move to play against the computer</p>
-      </div> -->
-      
       <div class="game-details">
-        <div class="copyright">&copy;<span id="current-year">2025</span> <a href="github.com/arman-develops">Amon victor</a></div>
-        <div class="scores">
-          Computer 11 - Player 22
+        <div class="copyright">&copy;<span id="current-year"></span><a href="github.com/arman-develops">Amon victor</a></div>
+        <div class="scores" id="scores">
+          Computer 0 0 Player
         </div>
       </div>
       <div class="game-controls">
-        <div class="start">
-          <i class="fa-solid fa-play"></i>
-          Start
-        </div>
-        <div class="play-again">
-          <i class="fa-solid fa-repeat"></i>
-          Play Again
-        </div>
-        <div class="reset">
+        <a href="#" class="reset" id="reset">
           <i class="fa-solid fa-rotate-left"></i>
           Reset
-        </div>
+        </a>
       </div>
       <div class="game-display">
-        <div class="computer-display">
-          ✌️
+        <p class="computer-text">Computer</p>
+        <div class="computer-display" id="computer-display">
+          
         </div>
-        <div class="game-results">
-          Player Wins
+        <div class="game-results" id="game-results">
+          
         </div>
-        <div class="player-display">
-          ✌️
+        <p class="player-text">Player</p>
+        <div class="player-display" id="player-display">
+          
         </div>
         <div class="player-options">
-          <div class="rock">
-            ✊
+          <div class="rock choice" id="rock" data-choice="rock">
+            <p>✊</p>
+            <p class="option-text">Rock</p>
           </div>
-          <div class="paper">
-            ✋
+          <div class="paper choice" id="paper" data-choice="paper">
+            <p>✋</p>
+            <p class="option-text">Paper</p>
           </div>
-          <div class="scissors">
-            ✌️
+          <div class="scissors choice" id="scissors" data-choice="scissors">
+            <p>✌️</p>
+            <p class="option-text">Scissors</p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="footer">
-      <p>Built by <a href="github.com/arman-develops">Amon</a></p>
-      <p>Follow me on Github</p>
     </section>
     <script type="module" src="/src/main.js"></script>
   </body>
