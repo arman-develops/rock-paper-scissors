@@ -111,4 +111,5 @@ body {
 .option-text {
   font-size: x-small;
   margin-top: 10px;
+  color: var(--bg);
 }
