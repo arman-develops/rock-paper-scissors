@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --bg: #242222;
+  --accent1: #00ffc3;
+  --accent2: #ff3cac;
+  --text: #ffffff;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.game-arena {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  width: 70%;
+}
+
+.title, .instructions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.game-title {
+  text-align: center;
+}
+
+.game-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px
+}
+
+.start, .play-again, .reset {
+  margin: 5px 15px;
+}
+
+.start:hover, .play-again:hover, .reset:hover {
+  cursor: pointer;
+}
+
+.game-details {
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-display {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.computer-display, .player-display {
+  border: 1px dotted black;
+  height: 30%;
+  width: 30%;
+}
+
+.game-results {
+  position: absolute;
+}
