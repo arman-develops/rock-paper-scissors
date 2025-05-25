@@ -8,6 +8,7 @@
   font-family: "Bungee", sans-serif;
   font-weight: 400;
   font-style: normal;
+  /* font-size: 62.5%; */
 }
 
 :root {
@@ -30,7 +31,7 @@ body {
   /* justify-content: center; */
   flex-direction: column;
   background-color: var(--bg);
-  color: var(--text);
+  color: var(--accent1);
   min-height: 100vh;
   width: 70%;
 }
@@ -60,24 +61,56 @@ body {
 }
 
 .game-details {
+  /* border: 2px dotted var(--accent2); */
+  padding: 5px 10px;
   margin: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.game-display {
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-}
-
 .computer-display, .player-display {
-  border: 1px dotted black;
-  height: 30%;
-  width: 30%;
+  border: 4px dotted var(--accent2);
+  height: 300px;
+  width: 300px;
+  margin: auto;
 }
 
 .game-results {
-  position: absolute;
+  text-align: center;
+}
+
+.computer-display, .player-display {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 10rem;
+  text-align: center;
+}
+
+.player-options {
+  display: flex;
+  justify-content: center;
+}
+
+.rock, .paper, .scissors {
+  background-color: antiquewhite;
+  margin: 10px;
+  width: 250px;
+  height: 150px;
+  font-size: 6rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.rock:hover, .paper:hover, .scissors:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #141f1c;
+  color: var(--accent1);
+  width: 70%;
+  padding: 2rem;
 }
